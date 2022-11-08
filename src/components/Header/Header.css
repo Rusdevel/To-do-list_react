@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    padding-top: 28px;
+    border-bottom: 1px solid rgba(84,84,84,.7);
+    margin: 0 auto;
+}
+
+.Header__title {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 32.68px;
+    text-align: center;
+}

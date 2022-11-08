@@ -1,0 +1,88 @@
+.AimForm {
+    min-width: 320px;
+    margin-top: 40px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .AimForm {
+      margin-top: 79px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .AimForm {
+      margin-top: 74px;
+    }
+  }
+  .AimForm__container {
+    min-width: 285px;
+    margin: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    border: 1.5px solid #aaaaaa;
+    border-radius: 8px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .AimForm__container {
+      margin: 0 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .AimForm__container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  }
+  
+  .AimForm__input {
+    width: 252px;
+    border: 0;
+    background-color: blanchedalmond;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .AimForm__input {
+      width: 662px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .AimForm__input {
+      width: 1112px;
+    }
+  }
+  
+  .AimForm__button {
+    outline: none;
+    width: 80px;
+    height: 44px;
+    background: #c07a2e;
+    border-radius: 5px;
+    border: 0;
+    transition: opacity 0.6s linear 0.3s;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .AimForm__button:hover {
+    opacity: 60%;
+  }
+  
+  .AimForm__input::placeholder {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8b8b8b;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .AimForm__input::placeholder {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  
