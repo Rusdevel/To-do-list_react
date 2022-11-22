@@ -5,12 +5,16 @@ import AimForm from "../AimForm/AimForm";
 import List from "../List/List";
 
 
-function Main() {
+function Main(props) {
   return (
     <div className="Main">
       <Header />
-      <AimForm />
-      <List />
+      <AimForm addTask={props.addTask} />
+      <List  propose={props.propose}
+      key={props.propose.id}
+      toggleTask={props.toggleTask}
+      deleteTask={props.deleteTask}
+      />
       <Footer />
     </div>
   );
