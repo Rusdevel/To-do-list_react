@@ -10,11 +10,17 @@ function Main(props) {
     <div className="Main">
       <Header />
       <AimForm addTask={props.addTask} />
-      <List  propose={props.propose}
-      key={props.propose.id}
+      {props.purposes.map((purpose) => {
+        return(
+<List  purpose={purpose}
+      key={purpose.id}
       toggleTask={props.toggleTask}
       deleteTask={props.deleteTask}
       />
+        )
+        
+      })}
+      
       <Footer />
     </div>
   );

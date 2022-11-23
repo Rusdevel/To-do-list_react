@@ -7,10 +7,10 @@ import Main from "../Main/Main";
 
 function App() {
   // массив целей
-const [purpose, setPrupose] = useState([]);
+const [purposes, setPruposes] = useState([]);
 // удаление задачи
-const deleteTask =()=> {
-
+const deleteTask =(id)=> {
+setPruposes([...purposes.filter((pupose) => pupose.id !== id)]);
 }
 
 //добавление задачи
@@ -19,21 +19,29 @@ if(input) {
   const newItem = {
     id: Math.random().toString(36).substring(2,9),
     task: input,
-    complate: false
+    complete: false
   }
-  setPrupose([...purpose, newItem])
-  console.log(purpose.length)
+  setPruposes([...purposes, newItem])
+  console.log(purposes.length)
 }
 }
 
-const toggle = () => {
-
+const toggleTask = (id) => {
+setPruposes([
+  ...purposes.map((prupose)=>
+  purposes.id ===id ? {...prupose, complete: !prupose.complete} : {...prupose})
+])
 }
 
   return (
     <div className="App">
       <Routes> // гарантирует, что одновременно отображается только один маршрут
-      <Route path='/' element={<Main addTask={addTask}/>} />
+      <Route path='/' element={<Main addTask={addTask}
+      toggleTask={toggleTask}
+      deleteTask={deleteTask}
+      purposes={purposes}
+      
+      />} />
       </Routes>
       
       
