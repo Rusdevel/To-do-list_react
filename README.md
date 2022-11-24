@@ -1,57 +1,37 @@
-# Getting Started with Create React App
+# To-do list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение для заметок
 
-## Available Scripts
+## Функционал
 
-In the project directory, you can run:
+Данное приложение вклчает:
 
-### `npm start`
+### Добавление целей
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Вы можете добавить цель или заметку и не держать ее в голове!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Удаление заметок
 
-### `npm test`
+Если заметка Вам не нужна ее можно удалить
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Индикатор выполнения задачи
 
-### `npm run build`
+Когда задача выполнена, Вы можете ее зачеркнуть нажав на нее левой кнопкой мыши
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Технологии
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### БЭМ
 
-### `npm run eject`
+Используется концепция Блок-элемент-модель, позволяющая в последующем легко масштабировать проект.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Адаптивная верстка
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Данное приложение выполнено с использованием flex-контейнеров и медиазапросов, что позволило сделать его адаптивным для савмых популярных разрешений экранов
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### React Hooks
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+В приложении используются Реакт Хуки, например стейт преременные, которые позволяют быстро менять значение переменной во всем коде.
 
 ### Making a Progressive Web App
 

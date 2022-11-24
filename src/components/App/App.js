@@ -29,7 +29,7 @@ if(input) {
 const toggleTask = (id) => {
 setPruposes([
   ...purposes.map((prupose)=>
-  purposes.id ===id ? {...prupose, complete: !prupose.complete} : {...prupose})
+  prupose.id ===id ? {...prupose, complete: !prupose.complete} : {...prupose})
 ])
 }
 
